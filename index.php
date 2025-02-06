@@ -15,8 +15,10 @@ $employee->setCommissionRate(0.5);
 
 //Display updated employee details
 echo "\nUpdated employee details:\n";
+echo "\n-------------------------\n";
 echo $employee;
 
+echo "\n-------------------------\n";
 //Calculate & display earnings
 echo "\nEarnings: $" . number_format($employee->earnings(),2)."\n";
 
