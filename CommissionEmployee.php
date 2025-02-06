@@ -103,4 +103,15 @@ public function __toString()
         $this->commissionRate
     );
 }
+
+//Implemented this based on the inheritance task
+public function display()
+{
+    echo "Commission Employee Details:\n";
+    echo "Name:" . $this->firstName . " " . $this->lastName . "\n";
+    echo "Social Security Number: " . $this->socialSecurityNumber . "\n";
+    echo "Gross Sales:" . $this->grossSales . "\n";
+    echo "CommissionRate: " . $this->commissionRate . "\n";
+    echo "Earnings: $" . number_format($this->earnings(),2) . "\n";
+ }
 }
